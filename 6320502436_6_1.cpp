@@ -9,12 +9,13 @@ int main()
 		scanf("%s",A[b]);
 		//printf("%s",A[b]);
 	}
-	for(c=65;c<91;c++)
+	for(c='A';c<='Z';c++)
 	{
 		for(b=0;b<a;b++)
 	{
-		if(A[b][1]==c)
-		{printf("%s",A[b]);
+		if(c==A[b][0])
+		{
+		printf("%s\n",A[b]);
 		}
 }
 	}
