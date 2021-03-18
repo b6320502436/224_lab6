@@ -1,9 +1,10 @@
 #include<stdio.h>
-main()
+#include<string.h>
+int main()
 {
-	int a=5,b,c=0,d=0,e,f,x,y;
+	int a=5,b=0,c=0,d=0,e,f,x,y;
 	scanf("%d",&a);
-	char A[20]={},B[a][a]={};
+	char A[20]={},B[a][a];
 	for(x=0;x<a;x++)
 	{
 		for(y=0;y<a;y++)
@@ -13,10 +14,15 @@ main()
 	}
 	//printf("%s",B[0]);
 	scanf("%s",A);
-	if(A[b]=='D')
-	B[c][d]='|';
+	
+	
 	for(b=0;b<20;b++)
 	{
+	if(A[0]=='D'||A[0]=='U')
+	{B[c][d]='|';
+	}
+	if(A[0]=='L'||A[0]=='R')
+	B[c][d]='-';
 		if(A[b]=='D')
 		{c++;
 		B[c][d]='|';
